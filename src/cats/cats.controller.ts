@@ -10,7 +10,7 @@ export class CatsController {
   @Post()
   create(@Body() createCatDto: CreateCatDto) {
     return this.catsService.create(createCatDto);
-  }
+    }
 
   @Get()
   findAll(@Query('page') page: number, @Query('limit') limit: number) {
